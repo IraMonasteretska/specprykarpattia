@@ -871,10 +871,12 @@
     }
 
 
-    .ourclients__logos img {
-        max-width: 33%;
-        width: 100%;
-        margin-top: 20px;
+    .ourclients__logos {
+        img {
+            max-width: 33%;
+            width: 100%;
+            margin: 20px 0;
+        }
     }
 
     .ourclients__logos {
@@ -925,12 +927,6 @@
 
 }
 
-@media(max-width:575.8px) {
-    .ourclients__logos img {
-        max-width: 29%;
-        margin: 20px 5px 0;
-    }
-}
 @media(max-height:550px) {
     .mainsl__slidedescr {
         min-height: 600px;
