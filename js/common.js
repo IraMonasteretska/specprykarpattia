@@ -13,20 +13,6 @@ $(document).ready(function () {
 
 
 
- function menuDropdown() {
-  if($(window).width() < 1200) {
-    $('.header__nav ul li.submenu > a').click(function (e) {
-      e.preventDefault();
-      $(this).next('ul').toggleClass('showsubmenu');
-      $(this).parent().toggleClass('rotate');
-    });
-  }
- }
-
- $(window).resize( function() {
-  menuDropdown();
-});
-
 
 
   
