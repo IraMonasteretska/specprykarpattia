@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header header__white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-8 header__logo">
+                        <a href="index.html">
+                            <img src="img/logo.svg" alt="logo">
+                            <img class="hide" src="img/logoblack.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__nav col-lg-5">
+                        <nav>
+                            <ul>
+                                <li class="submenu">
+                                    <a href="catalog.html">Каталог</a>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">
+                                                Спецодяг для ЗСУ, силових структур та охорони
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Євроспецодяг</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Одяг для мисливців та рибалок</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Одяг медичний</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Одяг поварський</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about-us.html">Наше підприємство</a></li>
+                                <li><a href="contact.html">Контакти</a></li>
+                            </ul>
+                            <ul class="mobtellist">
+                                <li>
+                                    <a href="tel:+380681440991" class="header__tel">
+                                        +38 (068) 144-09-91
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+380342722190">+38 (0342) 72-21-90</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="closemenu"><img src="img/close.svg" alt="close"></button>
+                    </div>
+                    <div class="header__contact col-lg-5">
+                        <div class="header__telbox">
+                            <a href="tel:+380681440991" class="header__tel">
+                                +38 (068) 144-09-91
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="tel:+380342722190">+38 (0342) 72-21-90</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="header__pricebtn">Переглянути прайс</a>
+                    </div>
+                    <button class="burgerbtn">
+                        <img src="img/burger.svg" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main mainpadd">
+            <div class="breadcramps">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.74 2.32007C12.6462 2.21695 12.532 2.13456 12.4046 2.07818C12.2771 2.0218 12.1393 1.99268 12 1.99268C11.8606 1.99268 11.7228 2.0218 11.5954 2.07818C11.4679 2.13456 11.3537 2.21695 11.26 2.32007L2.25997 12.3201C2.12726 12.4632 2.03932 12.642 2.00698 12.8344C1.97465 13.0269 1.99934 13.2246 2.07801 13.4032C2.15668 13.5818 2.28589 13.7335 2.44972 13.8395C2.61354 13.9456 2.80482 14.0014 2.99997 14.0001H4.99997V21.0001C4.99997 21.2653 5.10533 21.5196 5.29287 21.7072C5.4804 21.8947 5.73476 22.0001 5.99997 22.0001H18C18.2652 22.0001 18.5195 21.8947 18.7071 21.7072C18.8946 21.5196 19 21.2653 19 21.0001V14.0001H21C21.2652 14.0001 21.5195 13.8947 21.7071 13.7072C21.8946 13.5196 22 13.2653 22 13.0001C22.0018 12.7488 21.909 12.506 21.74 12.3201L12.74 2.32007Z"
+                                        fill="#68825A" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <span>Спецодяг для військових, силових структур та охорони </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="category__btn">
+                               <span>
+                                категорії
+                               </span>
+                               <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_435_1895)">
+                                <path d="M3.59998 0.5V4.09998H11.7L0 15.8L2.69998 18.5L14.4 6.79996V14.9H18V0.5H3.59998Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_435_1895">
+                                <rect width="18" height="18" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>                                
+                            </div>
+                            <div class="catalog__category">
+                                <div class="catalog__category-close">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.24436 5.42424C4.16689 5.34676 4.10543 5.25479 4.06351 5.15357C4.02158 5.05235 4 4.94386 4 4.8343C4 4.72474 4.02158 4.61625 4.06351 4.51503C4.10543 4.4138 4.16689 4.32183 4.24436 4.24436C4.32183 4.16689 4.4138 4.10543 4.51503 4.06351C4.61625 4.02158 4.72474 4 4.8343 4C4.94386 4 5.05235 4.02158 5.15357 4.06351C5.25479 4.10543 5.34676 4.16689 5.42424 4.24436L14 12.8218L22.5758 4.24436C22.6532 4.16689 22.7452 4.10543 22.8464 4.06351C22.9477 4.02158 23.0561 4 23.1657 4C23.2753 4 23.3838 4.02158 23.485 4.06351C23.5862 4.10543 23.6782 4.16689 23.7556 4.24436C23.8331 4.32183 23.8946 4.4138 23.9365 4.51503C23.9784 4.61625 24 4.72474 24 4.8343C24 4.94386 23.9784 5.05235 23.9365 5.15357C23.8946 5.25479 23.8331 5.34676 23.7556 5.42424L15.1782 14L23.7556 22.5758C23.8331 22.6532 23.8946 22.7452 23.9365 22.8464C23.9784 22.9477 24 23.0561 24 23.1657C24 23.2753 23.9784 23.3838 23.9365 23.485C23.8946 23.5862 23.8331 23.6782 23.7556 23.7556C23.6782 23.8331 23.5862 23.8946 23.485 23.9365C23.3838 23.9784 23.2753 24 23.1657 24C23.0561 24 22.9477 23.9784 22.8464 23.9365C22.7452 23.8946 22.6532 23.8331 22.5758 23.7556L14 15.1782L5.42424 23.7556C5.34676 23.8331 5.25479 23.8946 5.15357 23.9365C5.05235 23.9784 4.94386 24 4.8343 24C4.72474 24 4.61625 23.9784 4.51503 23.9365C4.4138 23.8946 4.32183 23.8331 4.24436 23.7556C4.16689 23.6782 4.10543 23.5862 4.06351 23.485C4.02158 23.3838 4 23.2753 4 23.1657C4 23.0561 4.02158 22.9477 4.06351 22.8464C4.10543 22.7452 4.16689 22.6532 4.24436 22.5758L12.8218 14L4.24436 5.42424Z" fill="#68825A"/>
+                                        </svg>                                        
+                                </div>
+                                <div class="catalog__category-title">
+                                    <h1>
+                                        категорії
+                                    </h1>
+                                </div>
+                                <div class="catalog__category-fields">
+                                    <ul>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Спецодяг для ЗСУ та силових структур та охорони
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                                <li><a href="#">Спецодяг для підрозділів ДСНС, спецвзуття</a></li>
+                                                <li><a href="#">Сорочки, термобілизна, трикотажні вироби, футболки</a>
+                                                </li>
+                                                <li><a href="#">Головні убори </a></li>
+                                                <li><a href="#">Спорядження</a></li>
+                                                <li><a href="#">Символіка</a></li>
+                                                <li><a href="#">Сигнальна продукція</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Євроспецодяг
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                                <li><a href="#">Спецодяг для підрозділів ДСНС, спецвзуття</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Одяг для мисливців та рибалок
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Одяг медичний
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Одяг поварський
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Одяг для зварювальників, металургів,хіміків
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Одяг водостійкий
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Взуття
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літнє</a></li>
+                                                <li><a href="#">Зимове</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Захист органів дихання
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Захист голови, обличчя та органів зору
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Робочі рукавиці та перчатки
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item category__dropdown">
+                                            <a href="#">
+                                                Протипожежне обладнання
+                                            </a>
+                                            <ul class="category__dropdown-box">
+                                                <li class="seeall"><a href="#">Переглянути все</a></li>
+                                                <li><a href="#">Літній спецодяг</a></li>
+                                                <li><a href="#">Зимовий спецодяг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Захист органів слуху
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Захисні засоби та страхові системи
+                                            </a>
+                                        </li>
+                                        <li class="catalog__category-item ">
+                                            <a href="#">
+                                                Діелектричні вироби
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <div class="catalog__inner">
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image1.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image2.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image3.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image4.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image5.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image6.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image1.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image2.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card-img">
+                                        <img src="img/new/card_image3.png" alt="photo">
+                                    </div>
+                                    <div class="catalog__card-content">
+                                        <p>
+                                            Костюм напівзаправка "Титан" (штани ,куртка) тк.Грета, мал. Город
+                                        </p>
+                                        <span>
+                                            Артикул: 314:567
+                                        </span>
+                                    </div>
+                                    <div class="catalog__card-btn">
+                                        <a href="product-page.html">
+                                            Переглянути товар
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="catalog__pagination">
+                                <ul class="pagination">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="#">
+                                            <img src="img/new/pagination_left.svg" alt="prev">
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="#">
+                                            <img src="img/new/pagination_right.svg" alt="next">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questionsection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="questionsection__descr">
+                                <h3>Залишились питання?</h3>
+                                <p>Зв’яжіться з нами за телефоном</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-right text-md-left">
+                            <a href="tel:+380681440991" class="tel">+38 (068) 144-09-91</a>
+                            <ul class="questionsection__list">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="img/viber.svg" alt="img">
+                                        Viber
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="img/whatsap.svg" alt="img">
+                                        Whatsap
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="img/telegram.svg" alt="img">
+                                        Telegram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer__logo">
+                            <a href="index.html"><img src="img/logo-footer.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer__address">
+                            <p class="title">
+                                Адреса магазину
+                            </p>
+                            <p class="descr">
+                                м. Івано-Франківськ, пл. Європейська, 3/203
+                            </p>
+                            <p class="title">
+                                Ми в соцмережах
+                            </p>
+                            <ul class="footer__soc">
+                                <li>
+                                    <a href="#"><img src="img/facebook-footer.svg" alt="img"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/instagram-footer.svg" alt="img"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer__contacts">
+                            <p class="fstitle">Контактна інформація</p>
+                            <div class="footer__tels">
+                                <a href="tel:+380681440991">+38 (068) 144-09-91</a>
+                                <a href="tel:+380342722190">+38 (0342) 72-21-90</a>
+                            </div>
+                            <div class="footer__emails">
+                                <a href="mailto:info@sts-3000.com.ua">info@sts-3000.com.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer__nav">
+                            <p class="fstitle">Навігація по сайту</p>
+                            <ul>
+                                <li><a href="about-us.html">Про нас</a></li>
+                                <li><a href="contact.html">Контакти</a></li>
+                                <li><a href="catalog.html">Каталог</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottext">
+                    <p>
+                        © 2012-2022. Всі права захищені.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
