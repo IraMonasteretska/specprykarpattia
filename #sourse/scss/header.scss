@@ -1,0 +1,538 @@
+header.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    padding: 25px 0;
+    transition: 0.3s;
+
+    &.whiteheader, &.header__white {
+        background: #fff;
+        box-shadow: 0 0 10px #333;
+
+        .header__logo a>img {
+            display: none;
+        }
+
+        .header__logo a>img.hide {
+            display: block;
+        }
+
+        .header__nav ul li a {
+            color: #232726;
+        }
+
+       
+
+        .header__nav ul li.submenu>a:after {
+            filter: invert(1);
+        }
+
+        .header__contact .header__tel {
+            color: #232726;
+
+            &::after,
+            &::before {
+                filter: invert(1);
+            }
+        }
+    }
+}
+header.header.header__white .header__nav ul li.submenu li a {
+    &:hover {
+        color: #68825A;
+    }
+}
+
+
+header.header {
+    &.header__white {
+        box-shadow: none;
+        &.whiteheader {
+            box-shadow: 0 0 10px #333;
+        }
+    }
+}
+
+
+.submenu:hover>ul,
+.header__telbox ul {
+    box-shadow: 0 10px 10px rgba(#000, 0.4);
+}
+
+.header__logo a>img.hide {
+    display: none;
+}
+
+.header__logo {
+    a>img {
+        max-width: 150px;
+    }
+}
+
+.header__nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 44px;
+            padding: 15px 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-family: "Octosquares";
+                color: #fff;
+                font-size: 18px;
+                line-height: 25px;
+                text-decoration: none;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    background: #68825A;
+                    bottom: -10px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 77px;
+                    }
+                }
+            }
+        }
+
+        li.submenu {
+            &>a {
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 14px;
+                    height: 10px;
+                    margin-left: 10px;
+                    background: url('../img/menuarrow.svg') no-repeat center / 100%;
+                }
+            }
+        }
+    }
+}
+
+.header__contact {
+    text-align: right;
+
+    .header__pricebtn {
+        background: #68825A;
+        height: 61px;
+        width: 228px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: "Octosquares";
+        text-decoration: none;
+        margin-left: 60px;
+        position: relative;
+        margin-right: 20px;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            right: -19px;
+            top: 0;
+            background: url('../img/btnside-right.png') no-repeat bottom center / 100%;
+        }
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            left: -19px;
+            top: 0;
+            background: url('../img/btnside-left.png') no-repeat top center / 100%;
+        }
+
+    }
+
+    .header__tel {
+        font-family: "Octosquares";
+        color: #fff;
+        font-size: 18px;
+        line-height: 150%;
+        text-decoration: none;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 10px;
+            margin-left: 10px;
+            background: url(../img/menuarrow.svg) no-repeat center/100%;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../img/tel-icon.svg) no-repeat center/100%;
+            vertical-align: middle;
+            margin-right: 6px;
+            margin-top: -3px;
+        }
+    }
+}
+
+.submenu {
+    position: relative;
+
+    &>ul {
+        width: 340px;
+        position: absolute;
+        background: #fff;
+        padding: 20px;
+        top: 53px;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+        transform: translateY(-10px);
+
+        li {
+            display: block;
+            padding: 0;
+            margin-bottom: 10px;
+
+            a {
+                color: #232726;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #68825A;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        &>ul {
+            z-index: 1;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+.header__tel {
+    padding: 15px 0;
+
+    &:hover {
+        &+ul {
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.header__telbox {
+    display: inline-block;
+    position: relative;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: 37px;
+        width: 100%;
+        visibility: hidden;
+        z-index: -1;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 0.3s;
+
+        li {
+            text-align: left;
+
+            a {
+                font-family: "Octosquares";
+                color: #232726;
+                font-size: 18px;
+                line-height: 150%;
+                text-decoration: none;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #68825A;
+                }
+            }
+        }
+
+        &:hover {
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.burgerbtn,
+.closemenu {
+    display: none;
+}
+
+.header__contact .header__pricebtn {
+    transition: 0.3s;
+
+    &:hover {
+        // transform: scale(0.98);
+        box-shadow: 0 5px 10px #333;
+    }
+}
+
+
+.mobtellist {
+    display: none;
+}
+
+
+@media(max-width:1800.8px) {
+
+    .header__contact .header__pricebtn {
+        height: 54px;
+        width: 210px;
+    }
+
+
+
+
+
+
+
+    .header__contact .header__tel,
+    .header__telbox ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1600.8px) {
+    .header__contact .header__pricebtn {
+        font-size: 16px;
+    }
+
+    .header__contact .header__tel:before {
+        margin-right: 2px;
+    }
+
+    .header__contact .header__tel:after {
+        margin-left: 4px;
+    }
+
+    .header__nav ul li {
+        margin-right: 34px;
+    }
+
+    .header__contact .header__pricebtn {
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+    .header__nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    header.header .row.align-items-center {
+        justify-content: space-between;
+    }
+
+    .burgerbtn {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    header.header .header__nav {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        background: #fff;
+        padding: 30px;
+    }
+
+    .header__nav ul li a {
+        color: #232726;
+    }
+
+    .header__nav ul li a:before {
+        display: none !important;
+    }
+
+    .header__nav ul li.submenu>a:after {
+        filter: invert(1);
+    }
+
+    .header__nav ul li {
+        display: block;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .submenu>ul {
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        position: relative;
+        top: 0;
+        display: none;
+    }
+
+    .header__nav ul li a {
+        font-size: 18px;
+    }
+
+    .submenu>ul.showsubmenu {
+        display: block;
+    }
+
+    .closemenu {
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        border: none;
+        background: #fff;
+        outline: none;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .header__nav {
+        transform: translateX(100%);
+        transition: 0.5s;
+
+        &.show {
+            transform: translateX(0);
+        }
+    }
+
+    .header__nav {
+        overflow: scroll;
+    }
+
+    .header__nav ul.mobtellist {
+        display: block;
+        padding-top: 30px;
+        padding-left: 30px;
+        background: url('../img/tel-black.svg') no-repeat 0 33px / 20px;
+    }
+
+    .header.header .header__nav nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .header.whiteheader,
+    .header.header__white {
+        padding: 15px 0;
+
+        .burgerbtn {
+            filter: invert(1);
+        }
+    }
+
+    header.header .header__nav {
+        z-index: 3;
+    }
+
+    .submenu:hover>ul {
+        box-shadow: none;
+    }
+
+    .header__nav ul li .showsubmenu li a {
+        font-size: 16px;
+    }
+    .header__nav ul li.submenu > a::after {
+        transition: 0.3s;
+    }
+    .header__nav ul li.submenu.rotate > a::after {
+        transform: rotate(-180deg);
+    }
+}
+
+@media(max-width:575.8px) {
+    header.header .header__nav {
+        padding: 30px 15px;
+    }
+
+    .closemenu {
+        right: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// font-family: "Octosquares";

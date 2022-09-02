@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Octosquares";
+    src: url("../fonts/TTOctosquares-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Octosquares";
+    src: url("../fonts/TTOctosquares-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Octosquares";
+    src: url("../fonts/TTOctosquares-Bold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.otf");
+    font-weight: 800;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope";
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
+}
+@media(min-width: 575.8px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+@media(min-width: 767.8px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+@media(min-width: 991.8px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+@media(min-width: 1199.8px) {
+    .container {
+        padding: 0 80px;
+    }
+}
+@media(min-width: 1400px) {
+    .container {
+        padding: 0 100px;
+    }
+}
+
+.whitebutton {
+    background: #fff;
+    height: 61px;
+    width: 277px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #232726;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Octosquares";
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    transition: 0.3s;
+
+    img {
+        margin-left: 14px;
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        right: -19px;
+        top: 0;
+        background: url('../img/btnside-right-white.png') no-repeat bottom center / 100%;
+    }
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        left: -19px;
+        top: 0;
+        background: url('../img/btnside-left-white.png') no-repeat top center / 100%;
+    }
+
+    &.dark {
+        background: #232726;
+        color: #fff;
+
+        &::after {
+            background: url('../img/btnside-right-dark.png') no-repeat bottom center / 100%;
+        }
+    
+        &::before {
+            background: url('../img/btnside-left-dark.png') no-repeat top center / 100%;
+        }
+
+        &:hover {
+            // transform: scale(0.98);
+            box-shadow: 0 5px 10px #333;
+        }
+    }
+
+    &:hover {
+        // transform: scale(0.98);
+        box-shadow: 0 5px 10px #333;
+    }
+}
+
+.secttitle {
+    text-align: center;
+    margin: 0 0 60px 0;
+    color: #232726;
+    font-size: 48px;
+    line-height: 67px;
+    font-family: "Octosquares";
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+//  ----- //
+ul,
+li {
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+//  ----- //

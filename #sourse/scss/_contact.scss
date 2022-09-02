@@ -1,0 +1,124 @@
+.contact {
+    padding: 130px 0 200px;
+}
+
+.contact__title {
+    h2 {
+        font-family: 'Octosquares';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        color: #232726;
+    }
+}
+
+.contact__field {
+    display: flex;
+    align-items: flex-end;
+
+    &+& {
+        margin-top: 45px;
+    }
+}
+
+.contact__field-icon {
+    width: 115px;
+
+    img {
+        background-size: contain;
+        width: auto;
+    }
+}
+
+.contact__field-info {
+    max-width: 350px;
+    width: 100%;
+
+    a {
+        display: block;
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #232726;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: #68825A;
+        }
+    }
+}
+
+.contact__map a{
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    img {
+        max-width: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: .4s;
+        transform: scale(1);
+        &:hover{
+            transform: scale(1.1);
+            filter: brightness(90%);
+        }
+    }
+}
+
+// RESPONSIVE //
+
+@media (max-width: 1600.8px) {
+    .contact__title h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .contact__field+.contact__field {
+        margin-top: 35px;
+    }
+
+    .contact {
+        padding: 100px 0 150px;
+    }
+}
+
+@media (max-width: 1400.8px) {
+    .contact__title h2 {
+        font-size: 36px;
+    }
+
+    .contact {
+        padding: 70px 0 100px;
+    }
+}
+
+@media (max-width: 1199.8px) {
+.contact__content{
+    margin-bottom: 30px;
+}
+}
+@media (max-width: 991.8px) {
+    .contact__field+.contact__field {
+        margin-top: 30px;
+    }
+    .contact {
+        padding: 50px 0 80px;
+    }
+    .contact__title h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .contact {
+        padding: 30px 0 40px;
+    }
+    .contact__title h2 {
+        font-size: 20px;
+    }
+}
