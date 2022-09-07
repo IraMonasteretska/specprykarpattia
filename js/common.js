@@ -60,7 +60,7 @@ $(document).ready(function () {
   }
 
   //  cotegory dropdown
-  $('.category__dropdown').find('a').on('click', function (evt) {
+  $('.category__dropdown').children('a').on('click', function (evt) {
     evt.preventDefault(evt);
     $(this).toggleClass('active');
     $(this).next('.category__dropdown-box ').slideToggle();

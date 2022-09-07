@@ -701,6 +701,9 @@
     .maincatbox .maincatbox__descr {
         bottom: 0;
     }
+    .main.mainpadd {
+        padding-top: 110px;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -743,6 +746,9 @@
     .categorysection__row h3 {
         font-size: 32px;
         line-height: 140%;
+    }
+    .main.mainpadd {
+        padding-top: 90px;
     }
 
 
@@ -921,9 +927,7 @@
         display: none;
     }
 
-    .main.mainpadd {
-        padding-top: 95px;
-    }
+
 
 }
 
